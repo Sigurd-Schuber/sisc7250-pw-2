@@ -1,12 +1,9 @@
 def splash():
 #Startscreen splash
-    print("")
-    print("~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~")
-    print("              Biathlon")
-    print("")
+    print("\n~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~")
+    print("              Biathlon\n")
     print("         a hit or miss game")
-    print("~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~")
-    print("")
+    print("~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\n")
     return None
 
 def open():
@@ -34,3 +31,12 @@ def is_closed(target):
     elif target==open():
         return False
 
+def new_targets():
+#This function crates a new list of open targets.
+    new_targets = []
+    for x in range(1, 6):
+        new_targets.append(open())
+    return(new_targets)     
+# def new_targets():
+#This function is a less elegant solution to do the same.
+#     return [open(), open(), open(), open(), open()]
