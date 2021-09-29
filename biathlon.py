@@ -28,15 +28,22 @@ def is_closed(target):
 #This function checks if a target is closed
     if target == closed():
         return True
-    elif target==open():
+    else:
         return False
 
 def new_targets():
 #This function crates a new list of open targets.
     new_targets = []
-    for x in range(1, 6):
+    for x in range(5):
         new_targets.append(open())
     return(new_targets)     
+
 # def new_targets():
-#This function is a less elegant solution to do the same.
+# #This function is a less elegant solution to do the same.
 #     return [open(), open(), open(), open(), open()]
+
+def close_target(target, targets):
+    target = new_targets[0]
+    
+    return targets[]
+    
