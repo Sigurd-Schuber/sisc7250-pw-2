@@ -9,3 +9,6 @@ def splash():
 
 def open():
     return 0
+
+def closed():
+    return 1
