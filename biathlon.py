@@ -6,3 +6,6 @@ def splash():
     print("         a hit or miss game")
     print("~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~")
     print("")
+
+def open():
+    return 0
