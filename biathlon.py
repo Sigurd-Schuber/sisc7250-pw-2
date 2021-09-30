@@ -36,14 +36,14 @@ def new_targets():
     new_targets = []
     for x in range(5):
         new_targets.append(open())
-    return(new_targets)     
+    return(new_targets)
 
 # def new_targets():
 # #This function is a less elegant solution to do the same.
 #     return [open(), open(), open(), open(), open()]
 
+ts = new_targets()
+
 def close_target(target, targets):
-    target = new_targets[0]
-    
-    return targets[]
-    
+    targets[target] = closed()
+    return targets
