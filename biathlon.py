@@ -44,13 +44,25 @@ def new_targets():
 
 ts = new_targets()
 
+#target:   indexet för ett mål på tavlan
+#targets:  listan med mål på tavlan
+#ts:       funktionen som öppnar en ny fräsch måltavla
+
 def close_target(target, targets):
     targets[target] = closed()
     return targets
 
 def hits(targets):
     n = 0
-    for element in targets:
-        if element == closed():
+    for x in targets:
+        if x == closed():
             n = n + 1
     return n
+
+def target_to_string(target):
+#Funktion som "översätter" vårt binära open/close till
+#visuell representation
+    if is_open(target) is True:
+        return "* "
+    elif is_closed(target) is True:
+        return "O "
