@@ -66,3 +66,17 @@ def target_to_string(target):
         return "* "
     elif is_closed(target) is True:
         return "O "
+
+
+
+def targets_to_string(targets):
+#Funktion som översätter måltavlans binära sträng till en visuell sträng
+    s = []
+    for element in targets:
+        if is_open(element) is True:
+            s.append("* ")
+        elif is_closed(element) is True:
+            s.append("O ")
+    return s
+
+
