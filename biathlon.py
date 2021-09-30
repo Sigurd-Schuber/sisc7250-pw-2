@@ -47,3 +47,10 @@ ts = new_targets()
 def close_target(target, targets):
     targets[target] = closed()
     return targets
+
+def hits(targets):
+    n = 0
+    for element in targets:
+        if element == closed():
+            n = n + 1
+    return n
